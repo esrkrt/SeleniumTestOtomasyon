@@ -35,6 +35,7 @@ public class TestCase {
         WebElement stations=webDriver.findElement((By.cssSelector("a[href*='#LineStation']")));
         stations.click();
 
+        webDriver.quit();
 
 
 }
