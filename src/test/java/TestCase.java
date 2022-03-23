@@ -25,8 +25,9 @@ public class TestCase {
                 webDriver.findElement(By.className("select2-results__option")).getText()));
         List<WebElement> searchResults=webDriver.findElements(By.className("select2-results__option"));
         searchResults.get(0).click();
-        webDriverWait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("button button--success")));
-        WebElement allInfos=webDriver.findElement(By.className("button button--success"));
-        allInfos.click();
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.className("button--success")));
+        WebElement allİnfos=webDriver.findElement(By.className("button--success"));
+        allİnfos.click();
+
 }
 }
